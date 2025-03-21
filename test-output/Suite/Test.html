@@ -1,0 +1,215 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Mar 21 10:08:23 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>153 seconds (153624 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.OrderRunner.runScenario()'><b>runScenario</b><br>Test class: runner.OrderRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Place an Order from Search to Checkout", "Order Placement"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: button-shipping-method (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\91936\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50134}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50134/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4993cb5335353ec4b5cd9940f8b388f2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForElementClickable(BasePage.java:27)
+	at pages.CheckoutPage.continueShippingMethod(CheckoutPage.java:112)
+	at stepDefinitions.OrderPlacementsSteps.i_continue_with_the_shipping_method(OrderPlacementsSteps.java:72)
+	at ✽.I continue with shipping(file:///C:/Users/Public/Wipro_Selenium/CapstoneProject/src/test/resources/features/OrderPlacement.feature:11)
+</pre></div><a href='#' onClick='toggleBox("stack-trace541957855", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace541957855'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: button-shipping-method (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\91936\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50134}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50134/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4993cb5335353ec4b5cd9940f8b388f2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForElementClickable(BasePage.java:27)
+	at pages.CheckoutPage.continueShippingMethod(CheckoutPage.java:112)
+	at stepDefinitions.OrderPlacementsSteps.i_continue_with_the_shipping_method(OrderPlacementsSteps.java:72)
+	at ✽.I continue with shipping(file:///C:/Users/Public/Wipro_Selenium/CapstoneProject/src/test/resources/features/OrderPlacement.feature:11)
+</pre></div></td>
+<td>21</td>
+<td>runner.OrderRunner@5656be13</td></tr>
+<tr>
+<td title='runner.ShopRunner.runScenario()'><b>runScenario</b><br>Test class: runner.ShopRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add multiple products to cart and remove one before checkout", "Shopping Cart Functionality"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //td[contains(text(),&apos;MacBook&apos;)]/parent::tr (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\91936\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50168}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50168/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe9ae9e33fb31705d8a0f042e4c6a52a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.CartPage.removeProduct(CartPage.java:27)
+	at stepDefinitions.ShoppingCartSteps.user_removes_from_the_cart(ShoppingCartSteps.java:73)
+	at ✽.User removes &quot;MacBook&quot; from the cart(file:///C:/Users/Public/Wipro_Selenium/CapstoneProject/src/test/resources/features/Shopping.feature:11)
+</pre></div><a href='#' onClick='toggleBox("stack-trace920603686", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace920603686'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //td[contains(text(),&apos;MacBook&apos;)]/parent::tr (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\91936\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50168}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50168/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe9ae9e33fb31705d8a0f042e4c6a52a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.CartPage.removeProduct(CartPage.java:27)
+	at stepDefinitions.ShoppingCartSteps.user_removes_from_the_cart(ShoppingCartSteps.java:73)
+	at ✽.User removes &quot;MacBook&quot; from the cart(file:///C:/Users/Public/Wipro_Selenium/CapstoneProject/src/test/resources/features/Shopping.feature:11)
+</pre></div></td>
+<td>20</td>
+<td>runner.ShopRunner@4218d6a3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.SearchFunctionality.runScenario()'><b>runScenario</b><br>Test class: runner.SearchFunctionality<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sort search results by price (High to Low)", "Product Search and Sort Functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.SearchFunctionality@235834f2</td></tr>
+<tr>
+<td title='runner.HomeRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HomeRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the homepage loads successfully", "Home Page Functionality"</td>
+<td></td>
+<td>8</td>
+<td>runner.HomeRunner@38d8f54a</td></tr>
+<tr>
+<td title='runner.ProductDetailsRunner.runScenario()'><b>runScenario</b><br>Test class: runner.ProductDetailsRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check product details", "Product Page"</td>
+<td></td>
+<td>15</td>
+<td>runner.ProductDetailsRunner@3270d194</td></tr>
+<tr>
+<td title='runner.SearchFunctionality.runScenario()'><b>runScenario</b><br>Test class: runner.SearchFunctionality<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Switch between grid and list view", "Product Search and Sort Functionality"</td>
+<td></td>
+<td>8</td>
+<td>runner.SearchFunctionality@235834f2</td></tr>
+<tr>
+<td title='runner.LoginRunner.runScenario()'><b>runScenario</b><br>Test class: runner.LoginRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Recover forgotten password", "OpenCart User Management"</td>
+<td></td>
+<td>2</td>
+<td>runner.LoginRunner@55141def</td></tr>
+<tr>
+<td title='runner.SearchFunctionality.runScenario()'><b>runScenario</b><br>Test class: runner.SearchFunctionality<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search for a product by name", "Product Search and Sort Functionality"</td>
+<td></td>
+<td>7</td>
+<td>runner.SearchFunctionality@235834f2</td></tr>
+<tr>
+<td title='runner.LoginRunner.runScenario()'><b>runScenario</b><br>Test class: runner.LoginRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid credentials", "OpenCart User Management"</td>
+<td></td>
+<td>3</td>
+<td>runner.LoginRunner@55141def</td></tr>
+<tr>
+<td title='runner.LoginRunner.runScenario()'><b>runScenario</b><br>Test class: runner.LoginRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register a new user", "OpenCart User Management"</td>
+<td></td>
+<td>8</td>
+<td>runner.LoginRunner@55141def</td></tr>
+<tr>
+<td title='runner.SearchFunctionality.runScenario()'><b>runScenario</b><br>Test class: runner.SearchFunctionality<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sort search results by rating", "Product Search and Sort Functionality"</td>
+<td></td>
+<td>15</td>
+<td>runner.SearchFunctionality@235834f2</td></tr>
+<tr>
+<td title='runner.HomeRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HomeRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search for a product", "Home Page Functionality"</td>
+<td></td>
+<td>11</td>
+<td>runner.HomeRunner@38d8f54a</td></tr>
+<tr>
+<td title='runner.HomeRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HomeRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search for a product", "Home Page Functionality"</td>
+<td></td>
+<td>3</td>
+<td>runner.HomeRunner@38d8f54a</td></tr>
+<tr>
+<td title='runner.SearchFunctionality.runScenario()'><b>runScenario</b><br>Test class: runner.SearchFunctionality<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search for Mac products", "Product Search and Sort Functionality"</td>
+<td></td>
+<td>3</td>
+<td>runner.SearchFunctionality@235834f2</td></tr>
+<tr>
+<td title='runner.ProductDetailsRunner.runScenario()'><b>runScenario</b><br>Test class: runner.ProductDetailsRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add product to cart", "Product Page"</td>
+<td></td>
+<td>6</td>
+<td>runner.ProductDetailsRunner@3270d194</td></tr>
+<tr>
+<td title='runner.ProductDetailsRunner.runScenario()'><b>runScenario</b><br>Test class: runner.ProductDetailsRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add product to wishlist", "Product Page"</td>
+<td></td>
+<td>7</td>
+<td>runner.ProductDetailsRunner@3270d194</td></tr>
+</table><p>
+</body>
+</html>

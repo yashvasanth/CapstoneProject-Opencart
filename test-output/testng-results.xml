@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="16" passed="14" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-21T10:08:23 IST" name="Suite" finished-at="2025-03-21T10:10:57 IST" duration-ms="153624">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.HomeRunner@38d8f54a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.LoginRunner@55141def]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.OrderRunner@5656be13]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.ProductDetailsRunner@3270d194]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SearchFunctionality@235834f2]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.ShopRunner@4218d6a3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-03-21T10:08:23 IST" name="Test" finished-at="2025-03-21T10:10:57 IST" duration-ms="153624">
+      <class name="runner.OrderRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.OrderRunner@5656be13]" started-at="2025-03-21T10:10:14 IST" name="setUpClass" finished-at="2025-03-21T10:10:14 IST" duration-ms="31" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@561d88ee]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.OrderRunner@5656be13]" started-at="2025-03-21T10:10:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-21T10:10:36 IST" duration-ms="21613" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Place an Order from Search to Checkout"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Order Placement"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.id: button-shipping-method (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\91936\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50134}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50134/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4993cb5335353ec4b5cd9940f8b388f2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: button-shipping-method (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\91936\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50134}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50134/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4993cb5335353ec4b5cd9940f8b388f2
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at pages.BasePage.waitForElementClickable(BasePage.java:27)
+at pages.CheckoutPage.continueShippingMethod(CheckoutPage.java:112)
+at stepDefinitions.OrderPlacementsSteps.i_continue_with_the_shipping_method(OrderPlacementsSteps.java:72)
+at ✽.I continue with shipping(file:///C:/Users/Public/Wipro_Selenium/CapstoneProject/src/test/resources/features/OrderPlacement.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.OrderRunner@5656be13]" started-at="2025-03-21T10:10:36 IST" name="tearDownClass" finished-at="2025-03-21T10:10:36 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.OrderRunner -->
+      <class name="runner.ShopRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.ShopRunner@4218d6a3]" started-at="2025-03-21T10:10:36 IST" name="setUpClass" finished-at="2025-03-21T10:10:36 IST" duration-ms="26" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@561d88ee]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.ShopRunner@4218d6a3]" started-at="2025-03-21T10:10:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-21T10:10:57 IST" duration-ms="20786" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add multiple products to cart and remove one before checkout"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Shopping Cart Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //td[contains(text(),'MacBook')]/parent::tr (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\91936\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50168}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50168/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe9ae9e33fb31705d8a0f042e4c6a52a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //td[contains(text(),'MacBook')]/parent::tr (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\91936\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50168}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50168/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe9ae9e33fb31705d8a0f042e4c6a52a
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at pages.CartPage.removeProduct(CartPage.java:27)
+at stepDefinitions.ShoppingCartSteps.user_removes_from_the_cart(ShoppingCartSteps.java:73)
+at ✽.User removes "MacBook" from the cart(file:///C:/Users/Public/Wipro_Selenium/CapstoneProject/src/test/resources/features/Shopping.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.ShopRunner@4218d6a3]" started-at="2025-03-21T10:10:57 IST" name="tearDownClass" finished-at="2025-03-21T10:10:57 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.ShopRunner -->
+      <class name="runner.LoginRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.LoginRunner@55141def]" started-at="2025-03-21T10:08:48 IST" name="setUpClass" finished-at="2025-03-21T10:08:48 IST" duration-ms="65" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@561d88ee]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:runner.LoginRunner@55141def]" started-at="2025-03-21T10:08:48 IST" name="setup" finished-at="2025-03-21T10:08:51 IST" duration-ms="2650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.LoginRunner@55141def]" started-at="2025-03-21T10:08:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-21T10:08:59 IST" duration-ms="8481" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Register a new user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["OpenCart User Management"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.LoginRunner@55141def]" started-at="2025-03-21T10:08:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-21T10:09:02 IST" duration-ms="3094" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["OpenCart User Management"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.LoginRunner@55141def]" started-at="2025-03-21T10:09:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-21T10:09:05 IST" duration-ms="2516" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Recover forgotten password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["OpenCart User Management"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:runner.LoginRunner@55141def]" started-at="2025-03-21T10:09:05 IST" name="teardown" finished-at="2025-03-21T10:09:05 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.LoginRunner@55141def]" started-at="2025-03-21T10:09:05 IST" name="tearDownClass" finished-at="2025-03-21T10:09:05 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.LoginRunner -->
+      <class name="runner.HomeRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.HomeRunner@38d8f54a]" started-at="2025-03-21T10:08:23 IST" name="setUpClass" finished-at="2025-03-21T10:08:24 IST" duration-ms="501" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@561d88ee]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.HomeRunner@38d8f54a]" started-at="2025-03-21T10:08:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-21T10:08:32 IST" duration-ms="8053" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the homepage loads successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Home Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.HomeRunner@38d8f54a]" started-at="2025-03-21T10:08:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-21T10:08:36 IST" duration-ms="3941" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search for a product"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Home Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.HomeRunner@38d8f54a]" started-at="2025-03-21T10:08:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-21T10:08:47 IST" duration-ms="11513" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search for a product"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Home Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.HomeRunner@38d8f54a]" started-at="2025-03-21T10:08:47 IST" name="tearDownClass" finished-at="2025-03-21T10:08:48 IST" duration-ms="883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.HomeRunner -->
+      <class name="runner.ProductDetailsRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.ProductDetailsRunner@3270d194]" started-at="2025-03-21T10:09:05 IST" name="setUpClass" finished-at="2025-03-21T10:09:05 IST" duration-ms="26" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@561d88ee]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.ProductDetailsRunner@3270d194]" started-at="2025-03-21T10:09:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-21T10:09:20 IST" duration-ms="15231" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check product details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.ProductDetailsRunner@3270d194]" started-at="2025-03-21T10:09:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-21T10:09:28 IST" duration-ms="7516" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add product to wishlist"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.ProductDetailsRunner@3270d194]" started-at="2025-03-21T10:09:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-21T10:09:34 IST" duration-ms="6325" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add product to cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.ProductDetailsRunner@3270d194]" started-at="2025-03-21T10:09:34 IST" name="tearDownClass" finished-at="2025-03-21T10:09:34 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.ProductDetailsRunner -->
+      <class name="runner.SearchFunctionality">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.SearchFunctionality@235834f2]" started-at="2025-03-21T10:09:34 IST" name="setUpClass" finished-at="2025-03-21T10:09:34 IST" duration-ms="52" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@561d88ee]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SearchFunctionality@235834f2]" started-at="2025-03-21T10:09:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-21T10:09:41 IST" duration-ms="7206" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search for a product by name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product Search and Sort Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SearchFunctionality@235834f2]" started-at="2025-03-21T10:09:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-21T10:09:45 IST" duration-ms="3946" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search for Mac products"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product Search and Sort Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SearchFunctionality@235834f2]" started-at="2025-03-21T10:09:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-21T10:09:50 IST" duration-ms="5216" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Sort search results by price (High to Low)"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product Search and Sort Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SearchFunctionality@235834f2]" started-at="2025-03-21T10:09:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-21T10:10:06 IST" duration-ms="15087" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Sort search results by rating"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product Search and Sort Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SearchFunctionality@235834f2]" started-at="2025-03-21T10:10:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-21T10:10:14 IST" duration-ms="8589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Switch between grid and list view"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product Search and Sort Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.SearchFunctionality@235834f2]" started-at="2025-03-21T10:10:14 IST" name="tearDownClass" finished-at="2025-03-21T10:10:14 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.SearchFunctionality -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
